@@ -13,7 +13,7 @@ var spotifyApi = new SpotifyWebApi({
 router.get("/", (req, res) => {
     res.redirect(spotifyApi.createAuthorizeURL([]));
 });
-
+// Imaginemos que arregle algo aca
 router.post("/login", (req, res) => {
     const code = req.body.code;
     
